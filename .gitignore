@@ -369,3 +369,4 @@ sweep/
 android/pytorch_android/.cxx/
 android/pytorch_android_torchvision/.cxx/
 build_android_*/
+.github/scripts/gql_mocks.json
