@@ -1,0 +1,37 @@
+allprojects {
+    buildscript {
+        ext {
+            minSdkVersion = 24
+            targetSdkVersion = 36
+            compileSdkVersion = 36
+            buildToolsVersion = '28.0.3'
+
+            coreVersion = "1.2.0"
+            extJUnitVersion = "1.1.1"
+            runnerVersion = "1.2.0"
+            rulesVersion = "1.2.0"
+            junitVersion = "4.12"
+
+            fbjniJavaOnlyVersion = "0.2.2"
+            soLoaderNativeLoaderVersion = "0.10.5"
+        }
+
+        repositories {
+            google()
+            jcenter()
+        }
+
+        dependencies {
+            classpath 'com.android.tools.build:gradle:8.11.1'
+        }
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext.deps = [
+        jsr305: 'com.google.code.findbugs:jsr305:3.0.1',
+]
